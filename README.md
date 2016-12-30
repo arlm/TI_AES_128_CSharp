@@ -6,6 +6,7 @@ There are two files in this repository. One of them is the original implementati
 For details on usage of the C library please refer to the original documentation provided by Texas Instruments http://www.ti.com/lit/an/slaa397a/slaa397a.pdf
 
 C# file has two main function:
+
 1) void aes_enc_dec(ref byte[] state, ref byte[] key, bool dir)
         This takes in the bytes that need to be encrypted (state), key to be used for encryption in byte format and direction to specify           encryption or decryption. Note that state and key are passed by reference and they will change after the operation is completed.           Set dir to false for encryption and true for decryption.
         state will be the result of encryption.
